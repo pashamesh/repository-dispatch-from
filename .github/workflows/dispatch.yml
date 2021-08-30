@@ -1,0 +1,16 @@
+name: Trigger other repositories workflows
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  trigger-to-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository `to` dispatch
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PA_GITHUB_TOKEN }}
+          repository: pashamesh/repository-dispatch-to
+          event-type: repository-dispatch-from-update
