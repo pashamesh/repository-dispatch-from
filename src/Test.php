@@ -7,8 +7,8 @@ namespace Pashamesh\RepositoryDispatchFrom;
 class Test
 {
 
-    public function itCan(): void
+    public function itCan(): bool
     {
-
+        return true;
     }
 }
