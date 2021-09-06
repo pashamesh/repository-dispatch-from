@@ -14,5 +14,7 @@
             "email": "pasha.mesh@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "8.0"
+    }
 }
